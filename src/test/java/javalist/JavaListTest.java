@@ -59,3 +59,10 @@ public class SemanaTest {
         assertEquals("Domingo", dias.get(0), "El primer día después de ordenar debe ser Domingo.");
         assertEquals("Viernes", dias.get(6), "El último día después de ordenar debe ser Viernes.");
     }
+
+    @Test
+    public void testVaciarLista() {
+        semana.vaciarLista();
+        assertEquals(0, semana.getTamañoLista(), "La lista debe estar vacía después de vaciarla.");
+    }
+}
