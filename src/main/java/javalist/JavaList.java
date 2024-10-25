@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Semana {
@@ -33,7 +34,16 @@ public class Semana {
         }
     }
 
-
     public boolean existeDia(String dia) {
         return diasSeaman.contains(dia) ? "Sí, existe el día: " + dia : "No existe el día: " + dia;
+    }
+
+    public void ordenarDiasAlfa() {
+        Collections.sort(diasSemana);
+    }
+
+    public void vaciarLista() {
+        diasSemana = new ArrayList<>();
+    }
+
     }
