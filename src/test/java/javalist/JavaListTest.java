@@ -18,5 +18,11 @@ public class SemanaTest {
         assertTrue(dias.contains("Lunes"), "La lista debe contener Lunes.");
     }
 
-    
+    @Test
+    public void testGetDiasSemana() {
+        List<String> dias = semana.getDiasSemana();
+        assertEquals(7, dias.size(), "La lista debe tener 7 días.");
+        assertEquals("Martes", dias.get(1), "El segundo día debe ser Martes.");
+    }
+
 
