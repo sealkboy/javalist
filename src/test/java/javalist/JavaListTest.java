@@ -45,3 +45,9 @@ public class SemanaTest {
         assertEquals("Has elegido este día: Miércoles", semana.getDia(2), "El tercer día debe ser Miércoles.");
         assertEquals("Índice fuera de rango.", semana.getDia(10), "El índice 10 está fuera de rango.");
     }
+
+    @Test
+    public void testExisteDia() {
+        assertEquals("Sí, existe el día: Lunes", semana.existeDia("Lunes"), "Debería existir Lunes.");
+        assertEquals("No existe el día: Funday", semana.existeDia("Funday"), "Funday no debería existir.");
+    }
