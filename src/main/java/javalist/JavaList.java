@@ -43,7 +43,7 @@ public class Semana {
     }
 
     public void vaciarLista() {
-        diasSemana = new ArrayList<>();
+        diasSemana.clear();
     }
 
-    }
+}
