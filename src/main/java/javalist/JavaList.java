@@ -1,13 +1,10 @@
-package javalist;
+import java.util.ArrayList;
+import java.util.List;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+public class Semana {
+    private List<String> diasSemana = new ArrayList<>();
+
+    public void listaDiasSemana() {
+        diasSemana = List.of("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
 }
+
