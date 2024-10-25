@@ -12,4 +12,8 @@ public class Semana {
         return new ArrayList<>(diasSemana);
     }
 
+    public int getTamañoLista(){
+        return diasSemana.size();
+    }
+
     
