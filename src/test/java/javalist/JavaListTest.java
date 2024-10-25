@@ -39,3 +39,9 @@ public class SemanaTest {
         resultado = semana.eliminarDia("Funday");
         assertEquals("Funday no se encontró en la lista.", resultado, "Funday no debe encontrarse en la lista.");
     }
+
+    @Test
+    public void testGetDia() {
+        assertEquals("Has elegido este día: Miércoles", semana.getDia(2), "El tercer día debe ser Miércoles.");
+        assertEquals("Índice fuera de rango.", semana.getDia(10), "El índice 10 está fuera de rango.");
+    }
