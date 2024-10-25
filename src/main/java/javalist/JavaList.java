@@ -33,5 +33,7 @@ public class Semana {
         }
     }
 
-    
 
+    public boolean existeDia(String dia) {
+        return diasSeaman.contains(dia) ? "Sí, existe el día: " + dia : "No existe el día: " + dia;
+    }
