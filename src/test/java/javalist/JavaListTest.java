@@ -51,3 +51,11 @@ public class SemanaTest {
         assertEquals("Sí, existe el día: Lunes", semana.existeDia("Lunes"), "Debería existir Lunes.");
         assertEquals("No existe el día: Funday", semana.existeDia("Funday"), "Funday no debería existir.");
     }
+
+    @Test
+    public void testOrdenarDiasAlfa() {
+        semana.ordenarDiasAlfa();
+        List<String> dias = semana.getDiasSemana();
+        assertEquals("Domingo", dias.get(0), "El primer día después de ordenar debe ser Domingo.");
+        assertEquals("Viernes", dias.get(6), "El último día después de ordenar debe ser Viernes.");
+    }
