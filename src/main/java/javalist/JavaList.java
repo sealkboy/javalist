@@ -25,4 +25,13 @@ public class Semana {
         }
     }
 
+    public String getDia(int index) {
+        if(index >= 0 && index < diasSemana.size()) {
+            return "Has elegido este día: " + diasSemana.get(index);
+        } else {
+            return "Índice fuera de rango.";
+        }
+    }
+
     
+
