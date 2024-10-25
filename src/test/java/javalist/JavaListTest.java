@@ -25,4 +25,7 @@ public class SemanaTest {
         assertEquals("Martes", dias.get(1), "El segundo día debe ser Martes.");
     }
 
-
+    @Test
+    public void testGetTamañoLista() {
+        assertEquals(7, semana.getTamañoLista(), "El tamaño de la lista debe ser 7.");
+    }
