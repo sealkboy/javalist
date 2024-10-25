@@ -16,4 +16,13 @@ public class Semana {
         return diasSemana.size();
     }
 
+    public String eliminarDia(String dia) {
+        if (diasSemana.contains(dia)) {
+            diasSemana.remove(dia);
+            return dia + " ha sido eliminado de la lista.";
+        } else {
+            return dia + " no se encontró en la lista.";
+        }
+    }
+
     
