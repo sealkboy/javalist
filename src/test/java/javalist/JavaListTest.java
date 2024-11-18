@@ -1,14 +1,17 @@
+package javalist;
+import static org.junit.jupiter.api.Assertions.*;
+
 import java.util.List;
 
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test; 
 
-public class SemanaTest {
-    private Semana semana;
+public class JavaListTest {
+    private JavaList semana;
 
     @BeforeEach
     public void setUp() {
-        semana = new Semana();
-        semana.listaDiasSemana(); // Inicializar la lista de días
+        semana = new JavaList();
     }
 
     @Test
